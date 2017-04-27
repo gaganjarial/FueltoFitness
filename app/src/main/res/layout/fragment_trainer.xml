@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.deltasoftwares.fueltofitness.Trainer">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/re">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:textColor="#FF2F90C3"
+            android:text="Personal Trainer"
+            android:textSize="40dp"/>
+        <FrameLayout
+            android:id="@+id/youtube_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#FF0C0C0D"
+            android:text="Karan Gill\n "
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:textIsSelectable="true"
+            android:textColor="#FF0C0C0D"
+            android:text="(Personal trainer at target fitness gym,chandigarh)\ncontact number :- 9041561318
+ email :- karanveer1995gill@gmail.com "
+            android:textSize="19dp"/>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColor="#FF1898DB"
+            android:text="NOTE :- This is a paid service program, fee may vary according to the diet plan and workout, first hour of guidance is free for all. So feel free take a test guidance. "
+            android:textSize="17dp"/>
+
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer">
+    </com.google.android.gms.ads.AdView>
+</FrameLayout>

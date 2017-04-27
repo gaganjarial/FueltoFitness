@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "543182621739",
+    "firebase_url": "https://fuel-to-fitness.firebaseio.com",
+    "project_id": "fuel-to-fitness",
+    "storage_bucket": "fuel-to-fitness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543182621739:android:8de94704fcc69d0d",
+        "android_client_info": {
+          "package_name": "com.deltasoftwares.fueltofitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543182621739-i42ch6un4lfmccduroop0458328n4oq9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deltasoftwares.fueltofitness",
+            "certificate_hash": "1943D4BE0B006B4D4BC5B4B3A0F3DE7F17DBEC81"
+          }
+        },
+        {
+          "client_id": "543182621739-duob6or52qj97eenrba5qcum9gd2t7tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB515_ClOzlSA7pamOPElcDEjC4VPIYLVI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543182621739-duob6or52qj97eenrba5qcum9gd2t7tf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

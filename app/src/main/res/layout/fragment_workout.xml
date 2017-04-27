@@ -1,0 +1,244 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deltasoftwares.fueltofitness.Workout">
+
+    <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/tabHost"
+        android:background="#FFFFFF"
+        android:textAlignment="center"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent">
+
+
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             >
+
+             <TabWidget
+               android:id="@android:id/tabs"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+
+                 android:layout_alignParentBottom="true"></TabWidget>
+
+
+             <FrameLayout
+                 android:id="@android:id/tabcontent"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:layout_marginBottom="40dp">
+
+
+                 <LinearLayout
+                     android:id="@+id/Mon"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/re"
+                     android:orientation="vertical">
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:textStyle="bold"
+                         android:textSize="30dp"
+                         android:text="CHEST"
+                         android:textAlignment="center"
+                         android:layout_marginTop="25dp"
+                        />
+
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="300dp"
+                         android:textStyle="bold"
+                         android:textSize="20dp"
+                         android:textAlignment="gravity"
+                         android:layout_marginTop="50dp"
+                         android:id="@+id/exe"/>
+
+                 </LinearLayout>
+
+
+                 <LinearLayout
+                     android:id="@+id/TUE"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/re"
+                   android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:textStyle="bold"
+                         android:textSize="30dp"
+                         android:text="Bicep and Tricep"
+                         android:textAlignment="center"
+                         android:layout_marginTop="25dp"
+                         />
+
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="300dp"
+                         android:textStyle="bold"
+                         android:textSize="20dp"
+                         android:textAlignment="gravity"
+                         android:layout_marginTop="50dp"
+                         android:id="@+id/tue_exe"/>
+                 </LinearLayout>
+
+
+              <LinearLayout
+                  android:id="@+id/WED"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                  android:background="@drawable/re"
+                    android:orientation="vertical">
+
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textSize="30dp"
+                      android:text="Legs"
+                      android:textAlignment="center"
+                      android:layout_marginTop="25dp"
+                      />
+
+
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="300dp"
+                      android:textStyle="bold"
+                      android:textSize="20dp"
+                      android:textAlignment="gravity"
+                      android:layout_marginTop="50dp"
+                      android:id="@+id/wed_exe"/>
+                </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/THU"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/re"
+                     android:orientation="vertical">
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:textStyle="bold"
+                         android:textSize="30dp"
+                         android:text="REST DAY"
+                         android:textAlignment="center"
+                         android:layout_marginTop="25dp"
+                         />
+
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="300dp"
+                         android:textStyle="bold"
+                         android:textSize="20dp"
+                         android:textAlignment="gravity"
+                         android:layout_marginTop="50dp"
+                         android:id="@+id/thu_exe"/>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/FRI"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/re"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:textStyle="bold"
+                         android:textSize="30dp"
+                         android:text="LATS"
+                         android:textAlignment="center"
+                         android:layout_marginTop="25dp"
+                         />
+
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="300dp"
+                         android:textStyle="bold"
+                         android:textSize="20dp"
+                         android:textAlignment="gravity"
+                         android:layout_marginTop="50dp"
+                         android:id="@+id/fri_exe"/>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/SAT"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/re"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:textStyle="bold"
+                         android:textSize="30dp"
+                         android:text="SHOULDER"
+                         android:textAlignment="center"
+                         android:layout_marginTop="25dp"
+                         />
+
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="300dp"
+                         android:textStyle="bold"
+                         android:textSize="20dp"
+                         android:textAlignment="gravity"
+                         android:layout_marginTop="50dp"
+                         android:id="@+id/sat_exe"/>
+                 </LinearLayout>
+
+
+            </FrameLayout>
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textStyle="bold"
+                 android:textSize="20dp"
+                 android:text="\n\n      Exercise                   sets         Rep"
+                 android:textAlignment="gravity"
+                 android:layout_marginTop="25dp"
+                 />
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+
+                 android:textStyle="bold"
+                 android:textSize="13dp"
+                 android:textColor="#FF2F90C3"
+                 android:textAlignment="gravity"
+                 android:layout_marginTop="20dp"
+                 android:id="@+id/note"
+                 />
+         </RelativeLayout>
+     </TabHost>
+
+
+    </FrameLayout>

@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.deltasoftwares.fueltofitness.Diet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/re">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="            DIET"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+           />
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="125dp"
+                android:layout_height="100dp"
+                android:background="@drawable/food"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/diet_list"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" >
+        </ListView>
+
+
+
+
+
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer">
+    </com.google.android.gms.ads.AdView>
+
+</FrameLayout>

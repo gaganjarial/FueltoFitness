@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Fuel to Fitness</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="banner_home_footer">ca-app-pub-4239131655084300/1009185071</string>
+    <string name="interstitial_full_screen">ca-app-pub-4239131655084300/6916117871
+</string>
+
+</resources>

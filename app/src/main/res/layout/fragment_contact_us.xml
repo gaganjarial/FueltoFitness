@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deltasoftwares.fueltofitness.ContactUs">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/mat">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:textAlignment="center"
+            android:textColor="#FF12A1EC"
+            android:text="Contact Us"
+            android:textSize="60dp"/>
+
+        <ImageButton
+            android:layout_marginLeft="100dp"
+            android:layout_width="177dp"
+            android:layout_height="177dp"
+            android:background="@drawable/v"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FF0C0C0D"
+            android:layout_height="70dp"
+            android:textAlignment="gravity"
+            android:text="For any queries and suggestion feel free to contact us."
+            android:textSize="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="70dp"
+            android:textColor="#FF0C0C0D"
+            android:textAlignment="gravity"
+            android:textIsSelectable="true"
+            android:text="Gagan Jarial \nEmail : gdsjarial@gmail.com"
+            android:textSize="25dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="180dp">
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="90dp"
+                    android:textAlignment="center"
+                    android:textColor="#FF12A1EC"
+                    android:text="Like Us ? \nRATE US."
+                    android:textSize="33dp"/>
+
+                <ImageButton
+                    android:layout_marginTop="20dp"
+                    android:layout_width="177dp"
+                    android:layout_height="125dp"
+                    android:background="@drawable/mu"
+                    />
+            </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

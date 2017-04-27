@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:paddingLeft="16dp"
+
+        tools:context="com.deltasoftwares.fueltofitness.Register">
+
+
+        <TextView
+            android:text="UPDATE INFO"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+
+        <TextView
+            android:text="UPDATE YOUR DETAILS"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+        <EditText
+            android:layout_marginTop="30dp"
+           android:layout_width="match_parent"
+            android:textStyle="normal"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="First Name"
+            android:textColor="#FFECECEC"
+            android:textColorHint="#FFECECEC"
+            android:ems="10"
+            android:id="@+id/first_name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Last Name"
+            android:textColor="#FFECECEC"
+            android:textColorHint="#FFECECEC"
+            android:ems="10"
+            android:id="@+id/last_name" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="email address"
+            android:textColor="#FFECECEC"
+            android:textColorHint="#FFECECEC"
+            android:ems="10"
+            android:id="@+id/email" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColorHint="#FF797A7C"
+            android:textColor="#FF797A7C"
+            android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFECECEC"
+            android:textColorHint="#FFECECEC"
+            android:inputType="textPassword"
+            android:hint="password"
+
+            android:ems="10"
+            android:id="@+id/password" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/myradiogroup">
+            <RadioButton
+                android:text="Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF636364"
+                android:id="@+id/male"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF636364"
+                android:id="@+id/female"
+                android:layout_weight="1" />
+        </RadioGroup>
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColorHint="#FF6C6D6D"
+            android:textColor="#FF6C6D6D"
+            android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Age"
+            android:textColor="#FFECECEC"
+            android:textColorHint="#FFECECEC"
+            android:ems="10"
+            android:id="@+id/age" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColorHint="#FF6C6D6D"
+            android:textColor="#FF6C6D6D"
+            android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Height (cm)"
+            android:textColor="#FFECECEC"
+            android:textColorHint="#FFECECEC"
+            android:ems="10"
+            android:id="@+id/height" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColorHint="#FF6C6D6D"
+            android:textColor="#FF6C6D6D"
+            android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Weight (kg)"
+            android:textColor="#FFECECEC"
+            android:textColorHint="#FFECECEC"
+            android:ems="10"
+            android:id="@+id/weight" />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:text="Update"
+            android:layout_width="150dp"
+            android:layout_marginTop="20dp"
+            android:background="#FF2F90C3"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"
+            android:id="@+id/update" />
+
+
+    </LinearLayout>
+
+</ScrollView>
