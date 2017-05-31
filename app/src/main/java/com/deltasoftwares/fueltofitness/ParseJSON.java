@@ -1,4 +1,6 @@
 package com.deltasoftwares.fueltofitness;
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -42,6 +44,8 @@ public class ParseJSON {
     protected void parseJSON(){
         JSONObject jsonObject=null;
         try {
+
+            /*Log.v("ParseJSON",json);*/
             jsonObject = new JSONObject(json);
             users = jsonObject.getJSONArray(JSON_ARRAY);
 

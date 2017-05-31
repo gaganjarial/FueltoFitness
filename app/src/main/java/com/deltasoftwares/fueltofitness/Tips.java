@@ -80,7 +80,7 @@ public class Tips extends Fragment {
         w1.getSettings();
 
         w1.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        w1.loadUrl("http://www.helpguide.org/articles/exercise-fitness/easy-ways-to-start-exercising.htm");
+        w1.loadUrl("https://india.curejoy.com/content/ways-to-get-workout-motivation/");
 
 
         // add

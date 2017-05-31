@@ -17,7 +17,7 @@ import com.google.android.youtube.player.YouTubeThumbnailView;
 public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.VideoInfoHolder> {
 
     //these ids are the unique id for each video
-    String[] VideoID = {"P3mAtvs5Elc", "nCgQDjiotG0","jbkb"};
+    String[] VideoID = {"7qM-DRn10SE", "T-czzrF6yXA","iQIrxBmgXmE"};
     Context ctx;
 
     public RecycleAdapter(Context context) {

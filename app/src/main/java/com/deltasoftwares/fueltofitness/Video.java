@@ -86,11 +86,11 @@ public class Video extends Fragment {
         mInterstitialAd.setAdUnitId(getString(R.string.interstitial_full_screen));
         AdRequest adRequest = new AdRequest.Builder().build();
         mInterstitialAd.loadAd(adRequest);
-        mInterstitialAd.setAdListener(new AdListener() {
+      /*  mInterstitialAd.setAdListener(new AdListener() {
             public void onAdLoaded() {
                 showInterstitial();
             }
-        });
+        }); */
         return v;
     }
 

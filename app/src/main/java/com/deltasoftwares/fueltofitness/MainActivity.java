@@ -1,8 +1,10 @@
 package com.deltasoftwares.fueltofitness;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.net.Uri;
 import android.os.Bundle;
@@ -62,6 +64,7 @@ protected void onCreate(Bundle savedInstanceState) {
         update= (Button)findViewById(R.id.button);
 
         update.setOnClickListener(this);
+
 
         SharedPreferences sp =getSharedPreferences("SP", Context.MODE_PRIVATE);
         po = sp.getString("EMAIL","");
@@ -174,7 +177,24 @@ public void onBackPressed() {
         if (drawer.isDrawerOpen(GravityCompat.START)) {
         drawer.closeDrawer(GravityCompat.START);
         } else {
-        super.onBackPressed();
+                AlertDialog.Builder alert=new AlertDialog.Builder(this);
+                alert.setMessage("Are you sure, You want to exit?");
+                alert.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface arg0, int arg1) {
+                                       finish();
+                                }
+                        });
+
+                alert.setNegativeButton("No",new DialogInterface.OnClickListener() {
+
+                        public void onClick(DialogInterface dialog, int which) {
+
+                        }
+                });
+
+                AlertDialog alertDialog = alert.create();
+                alertDialog.show();
         }
         }
 
