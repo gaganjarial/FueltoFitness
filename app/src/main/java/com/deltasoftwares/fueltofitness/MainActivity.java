@@ -8,19 +8,15 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -41,7 +37,7 @@ public class MainActivity extends AppCompatActivity
         Trainer.OnFragmentInteractionListener , AdapterView.OnItemSelectedListener,Diet.OnFragmentInteractionListener
         , View.OnClickListener,Tips.OnFragmentInteractionListener,
         Video.OnFragmentInteractionListener{
-        String lol,po;
+        String temp_string,sp_email;
         TextView name,bmi,tips,height,weight,age;
         Spinner spinner;
         Button update;
@@ -67,8 +63,8 @@ protected void onCreate(Bundle savedInstanceState) {
 
 
         SharedPreferences sp =getSharedPreferences("SP", Context.MODE_PRIVATE);
-        po = sp.getString("EMAIL","");
-        po="'"+po+"'";
+        sp_email = sp.getString("EMAIL","");
+        sp_email="'"+sp_email+"'";
 
 
 
@@ -110,7 +106,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 private void sendRequest(){
 
-        StringRequest stringRequest = new StringRequest("http://fueltofitness.esy.es/fit/fetch.php?email="+po,
+        StringRequest stringRequest = new StringRequest("http://fueltofitness.esy.es/fit/fetch.php?email="+sp_email,
         new Response.Listener<String>() {
 @Override
 public void onResponse(String response) {
@@ -136,18 +132,18 @@ private void showJSON(String json){
         name.setText(ParseJSON.firstname[0]);
 
 
-        lol = ParseJSON.bmi[0].substring(0,5);
-        bmi.setText(lol);
-        float bodymass = Float.parseFloat(lol);
+        temp_string = ParseJSON.bmi[0].substring(0,5);
+        bmi.setText(temp_string);
+        float bodymass = Float.parseFloat(temp_string);
 
-        lol = ParseJSON.height[0];
-        lol = lol + " cm";
-        height.setText(lol);
+        temp_string = ParseJSON.height[0];
+        temp_string = temp_string + " cm";
+        height.setText(temp_string);
 
 
-        lol = ParseJSON.weight[0];
-        lol = lol + " kg";
-        weight.setText(lol);
+        temp_string = ParseJSON.weight[0];
+        temp_string = temp_string + " kg";
+        weight.setText(temp_string);
 
 
         age.setText(ParseJSON.age[0]);

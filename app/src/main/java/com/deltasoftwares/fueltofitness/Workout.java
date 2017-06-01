@@ -27,9 +27,9 @@ public class Workout extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    String bulk_note = new String("NOTE :- Go for lifting maximum weight your body can and try increasing it every week with small amount. You are always better than yesterday.");
-    String lean_note = new String("NOTE :- Lift moderate weight with controlled repetetion, concentrate on your muscle while you exercise. dont forget to do the completely inhale and exhale while exercising.  Rest 40-60 sec in between sets");
-    String shredding_note = new String("NOTE :- Go for maximum repetetion lift comparatively less wight, lwt your muscle pump . You are always better than yesterday.");
+    String bulk_note = new String("NOTE :- Lift maximum weight your body can and try increasing it every week in small propotion. You are always better than yesterday.");
+    String lean_note = new String("NOTE :- Lift moderate weight with controlled repetetion, concentrate on your muscle while you exercise. Dont forget to inhale and exhale completely while exercising.  Rest 40-60 sec in between sets");
+    String shredding_note = new String("NOTE :- Lift comparatively lighter than others training method, let your muscle pump . You are always better than yesterday.");
 
 
     private OnFragmentInteractionListener mListener;
