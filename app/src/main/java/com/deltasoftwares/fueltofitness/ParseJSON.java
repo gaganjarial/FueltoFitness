@@ -45,7 +45,6 @@ public class ParseJSON {
         JSONObject jsonObject=null;
         try {
 
-            /*Log.v("ParseJSON",json);*/
             jsonObject = new JSONObject(json);
             users = jsonObject.getJSONArray(JSON_ARRAY);
 

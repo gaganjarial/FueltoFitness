@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity
         Video.OnFragmentInteractionListener{
         String temp_string,sp_email;
         TextView name,bmi,tips,height,weight,age;
-        Spinner spinner;
+        Spinner spinner_obj;
         Button update;
 
 
@@ -69,11 +69,11 @@ protected void onCreate(Bundle savedInstanceState) {
 
 
 
-        spinner = (Spinner) findViewById(R.id.spinner);
+        spinner_obj = (Spinner) findViewById(R.id.spinner);
 
         // Spinner click listener
 
-        spinner.setOnItemSelectedListener(this);
+        spinner_obj.setOnItemSelectedListener(this);
 
         List<String> categories = new ArrayList<String>();
         categories.add("Shredding");
@@ -85,9 +85,9 @@ protected void onCreate(Bundle savedInstanceState) {
 
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        spinner.setAdapter(dataAdapter);
+        spinner_obj.setAdapter(dataAdapter);
         int op = sp.getInt("category",-1);
-        spinner.setSelection(op);
+        spinner_obj.setSelection(op);
 
 
 
